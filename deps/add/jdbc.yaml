@@ -1,0 +1,14 @@
+---
+actions:
+  injectMavenDependency:
+    to: pom.xml
+    skip: spring-boot-starter-jdbc
+---
+{{#jdbc}}
+
+       <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-jdbc</artifactId>
+       </dependency>
+
+{{/jdbc}}
